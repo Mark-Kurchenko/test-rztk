@@ -27,9 +27,14 @@ public class PurchaseStory {
         PurchasePage.select_item();
     }
 
+    //@Step
+   // public void activate_cart_popup() {
+     //   PurchasePage.cart_icon_popup_open();
+    //}
+
     @Step
-    public void activate_cart_popup() {
-        PurchasePage.cart_icon_popup_open();
+    public void open_checkout_page() {
+        PurchasePage.openUrl("https://my.rozetka.com.ua/checkout/?");
     }
 
     @Step

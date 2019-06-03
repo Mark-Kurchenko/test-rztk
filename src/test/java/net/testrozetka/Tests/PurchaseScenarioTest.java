@@ -26,12 +26,13 @@ public class PurchaseScenarioTest {
 
     @Issue("RegressionHomePage") //Это для ведения документации, пока не нужно
     @Test
-    public void TestHomePageAllElementsPresent() {
+    public void TestPurchaseScenario() {
         PurchaseScenario.open_home();
         PurchaseScenario.open_section_page();
         PurchaseScenario.open_category_page();
         PurchaseScenario.add_item_to_cart();
-        PurchaseScenario.activate_cart_popup();
+       // PurchaseScenario.activate_cart_popup();
+        PurchaseScenario.open_checkout_page();
         PurchaseScenario.open_cart_page();
     }
 
