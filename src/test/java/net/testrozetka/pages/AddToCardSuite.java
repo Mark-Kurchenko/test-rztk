@@ -1,4 +1,5 @@
 package net.testrozetka.pages;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.Before;
 import org.junit.After;
@@ -28,15 +29,16 @@ public class AddToCardSuite {
     private WebDriver driver;
     private Map<String, Object> vars;
     JavascriptExecutor js;
-    @Before
+    @Ignore
     public void setUp() {
 
     }
-    @After
+    @Ignore
     public void tearDown() {
         driver.quit();
     }
-    @Test
+
+    @Ignore
     public void AddToCard() throws InterruptedException {
         // Test name: AddToCard
         // Step # | name | target | value | comment
